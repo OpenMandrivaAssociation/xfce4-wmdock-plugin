@@ -11,6 +11,7 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libwnck-devel
 Obsoletes:	xfce-wmdock-plugin
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 The WMdock plugin is a compatibility layer for running 
