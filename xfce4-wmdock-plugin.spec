@@ -1,6 +1,6 @@
 Summary:	WindowMaker dockapps plugin for the Xfce desktop environment
 Name:		xfce4-wmdock-plugin
-Version:	0.1.9
+Version:	0.2.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
