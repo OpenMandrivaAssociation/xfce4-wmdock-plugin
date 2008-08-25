@@ -30,6 +30,8 @@ and feel of the WindowMaker dock or clip, respectively.
 rm -rf %{buildroot}
 %makeinstall_std
 
+%find_lang %{name}
+
 %if %mdkversion < 200900
 %post
 %update_icon_cache hicolor
@@ -43,7 +45,7 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files
+%files -f %{name}.lang
 %defattr(-,root,root)
 %doc README ChangeLog AUTHORS
 %{_libdir}/xfce4/panel-plugins/*
