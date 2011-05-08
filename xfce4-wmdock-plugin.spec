@@ -13,6 +13,7 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libwnck-devel
 BuildRequires:	libxfce4util-devel
+BuildRequires:	libxfcegui4-devel
 Obsoletes:	xfce-wmdock-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
