@@ -1,15 +1,18 @@
+%define url_ver %(echo %{version} | cut -c 1-3)
+
 Summary:	WindowMaker dockapps plugin for the Xfce desktop environment
 Name:		xfce4-wmdock-plugin
-Version:	0.3.2
-Release:	%mkrel 5
+Version:	0.3.4
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-wmdock-plugin
-Source0:	http://goodies.xfce.org/releases/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-wmdock-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libwnck-devel
+BuildRequires:	libxfce4util-devel
 Obsoletes:	xfce-wmdock-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
