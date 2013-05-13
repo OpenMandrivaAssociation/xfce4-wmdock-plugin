@@ -12,8 +12,8 @@ Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libwnck-devel
-BuildRequires:	libxfce4util-devel
-BuildRequires:	libxfcegui4-devel
+BuildRequires:	pkgconfig(libxfce4util-1.0)
+BuildRequires:	pkgconfig(libxfcegui4-1.0)
 Obsoletes:	xfce-wmdock-plugin
 
 %description
